@@ -1,0 +1,110 @@
+<!-- src/app/pages/wines/wines.component.html -->
+<div class="navisgamosachenad"></div>
+<div class="wines-container">
+  <!-- Gallery View -->
+  <div class="gallery-view" *ngIf="!isDetailView">
+    <!-- Header Section -->
+    <header class="gallery-header">
+      <h1 class="gallery-title">Dakishvili familly vineyards</h1>
+      <p class="gallery-subtitle">19 wines • 4 categories</p>
+
+      <!-- Filter Section -->
+      <div class="filter-container">
+        <select
+          class="filter-select"
+          [(ngModel)]="selectedType"
+          (ngModelChange)="filterWines()"
+        >
+          <option value="">All</option>
+          <option value="სადესერტო">Dessert Wines</option>
+          <option value="ქვევრის">Qvevri Wines</option>
+          <option value="კლასიკური">Classical Wines</option>
+          <option value="ცქრიალა">Sparkling Wines</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Wine Grid -->
+    <div class="wine-grid">
+      <div
+        class="wine-card"
+        *ngFor="let wine of filteredWines; let i = index"
+        (click)="selectWine(wine)"
+      >
+        <div class="wine-image-container">
+          <img
+            [src]="wine.image"
+            [alt]="wine.name"
+            class="wine-image"
+            (error)="onImageError($event)"
+          />
+        </div>
+
+        <div class="wine-info">
+          <h3 class="wine-name">{{ wine.name }}</h3>
+          <p class="wine-region">{{ wine.region }}</p>
+          <p class="wine-grapes">{{ wine.grapes.join(", ") }}</p>
+        </div>
+
+        <div class="hover-overlay">
+          <button class="view-details-btn">View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail View -->
+  <div class="detail-view" *ngIf="isDetailView && selectedWine">
+    <!-- Back Button -->
+    <button class="back-button" (click)="goBackToGallery()" type="button">
+      Go Back
+    </button>
+
+    <!-- Wine Detail Card -->
+    <div class="wine-detail-card">
+      <!-- Image Section -->
+      <div class="detail-image-section">
+        <img
+          [src]="selectedWine.image"
+          [alt]="selectedWine.name"
+          class="detail-image"
+          (error)="onImageError($event)"
+        />
+
+        <div class="detail-badges"></div>
+      </div>
+
+      <!-- Info Section -->
+      <div class="detail-info-section">
+        <!-- Wine Header -->
+        <div class="wine-header">
+          <h1 class="wine-title">{{ selectedWine.name }}</h1>
+          <div class="wine-meta">
+            <span class="region">{{ selectedWine.region }}</span>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="wine-description">
+          <p>{{ selectedWine.description }}</p>
+        </div>
+
+        <!-- Specifications Grid -->
+        <div class="wine-specs">
+          <div class="spec-item">
+            <span class="spec-label">Grape Variety:</span>
+            <span class="spec-value">{{ selectedWine.grapes.join(", ") }}</span>
+          </div>
+        </div>
+
+        <!-- Tasting Notes -->
+        <div class="tasting-notes">
+          <h3>Degustation Notes</h3>
+          <p>{{ selectedWine.tastingNotes }}</p>
+        </div>
+
+        <!-- Contact Section -->
+      </div>
+    </div>
+  </div>
+</div>

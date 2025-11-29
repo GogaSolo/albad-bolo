@@ -1,0 +1,79 @@
+<footer>
+  <div class="fotcont">
+    <!-- Navigation Section -->
+    <div class="contitemsfooter">
+      <h1>{{getText(dakishvilinavsfooter,'title')}}</h1>
+      <div class="navlist">
+        <ul id="nks">
+          <li *ngFor="let link of dakishvilinavsfooter.navigationLinks">
+            <a [routerLink]="getRoute(link.route)" routerLinkActive="active">
+              {{ getText(link, 'name') }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Wine Cellar Section -->
+    <div class="contitemsfooter">
+      <h1 id="brs1">{{ getText(wineCellarInfo, 'title') }}</h1>
+      <div class="navlistkkrs">
+        <ul>
+          <li *ngFor="let contact of wineCellarInfo.contacts">
+            <a
+              [href]="contact.href || null"
+              [class]="contact.type"
+              (click)="contact.href ? null : $event.preventDefault()"
+            >
+              {{ getText(contact, 'text') }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Wine Boutique Section -->
+    <div class="contitemsfooter">
+      <h1 id="brs1">{{ getText(wineBoutiqueInfo, 'title') }}</h1>
+      <div class="navlistkkrs222">
+        <ul>
+          <li *ngFor="let contact of wineBoutiqueInfo.contacts">
+            <a
+              [href]="contact.href || null"
+              [class]="contact.type"
+              (click)="contact.href ? null : $event.preventDefault()"
+            >
+              {{ getText(contact, 'text') }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="contitemsfooter">
+      <h1 id="brs1">{{ getText(socialMediaLabel, 'title') }}</h1>
+      <div class="navlist">
+        <div class="ragadiv">
+          <span *ngFor="let social of socialLinks">
+            <i
+              [class]="social.icon"
+              [attr.aria-label]="getText(social, 'ariaLabel')"
+              (click)="onSocialClick(social)"
+              [title]="social.name"
+            >
+            </i>
+          </span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Copyright Section -->
+<div class="minicopyright">
+  <div class="copydiv">
+    <p id="last">{{ currentLanguage === 'ქარ' ? copyrightTextKa : copyrightText }}</p>
+  </div>
+</div>

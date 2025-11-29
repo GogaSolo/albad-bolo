@@ -1,0 +1,337 @@
+//? footer variables
+$footerbackground: #333;
+$minmax: 100%;
+$textsize: 24px;
+$fotheight: 55vh;
+$minitext: #354c04;
+$textdidi: #243305;
+$bgColor: #FAF9F5;
+
+// Copyright Section
+.minicopyright {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bgColor;
+  
+  .copydiv {
+    width: 90%;
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $textdidi;
+    border-top: 1px solid $minitext;
+    
+    #last {
+      font-size: 14px;
+      text-align: center;
+      margin: 0;
+      padding: 0 20px;
+    }
+  }
+}
+
+// Main Footer
+footer {
+  width: $minmax;
+  font-size: $textsize;
+  min-height: $fotheight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bgColor;
+  padding: 60px 20px 40px;
+
+  .fotcont {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    
+    .contitemsfooter {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 30px;
+
+      h1 {
+        position: relative;
+        display: inline-block;
+        font-family: "Edu NSW ACT Hand Pre", cursive;
+        font-size: 28px;
+        color: $textdidi;
+        margin-bottom: 10px;
+        padding-right: 60px;
+        
+        &::after {
+          position: absolute;
+          content: "";
+          width: 45px;
+          height: 2px;
+          top: 50%;
+          right: 0;
+          margin-top: -1px;
+          background-color: $textdidi;
+        }
+      }
+
+      .navlist,
+      .navlistkkrs,
+      .navlistkkrs222 {
+        width: 100%;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        li {
+          width: 100%;
+        }
+      }
+
+      a {
+        position: relative;
+        display: inline-block;
+        color: $minitext;
+        font-size: 16px;
+        font-weight: 400;
+        
+        text-decoration: none;
+        transition: all 0.3s ease;
+        padding-bottom: 4px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: $minitext;
+          transition: width 0.3s ease;
+        }
+
+        &:hover {
+          color: $textdidi;
+          
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+
+      // Social Media Icons
+      .ragadiv {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        span {
+          border: 1px solid $minitext;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s ease;
+          color: $textdidi;
+          cursor: pointer;
+
+          i {
+            font-size: 20px;
+            transition: color 0.3s ease;
+          }
+
+          &:hover {
+            background-color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+            .fa-facebook-f {
+              color: #1877f2;
+            }
+
+            .fa-instagram {
+              color: #c13584;
+            }
+
+            .fa-youtube {
+              color: #ff0000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablet - 1024px and below
+@media screen and (max-width: 1024px) {
+  footer {
+    .fotcont {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 30px;
+      
+      .contitemsfooter {
+        h1 {
+          font-size: 24px;
+        }
+
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+// Mobile Large - 768px and below
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 50px 20px 30px;
+    min-height: auto;
+
+    .fotcont {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      
+      .contitemsfooter {
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+
+        h1 {
+          font-size: 22px;
+          padding-right: 0;
+          
+          &::after {
+            display: none;
+          }
+        }
+
+        ul {
+          align-items: center;
+          gap: 10px;
+        }
+
+        a {
+          font-size: 15px;
+        }
+
+        .ragadiv {
+          justify-content: center;
+          gap: 15px;
+
+          span {
+            width: 45px;
+            height: 45px;
+
+            i {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .minicopyright {
+    height: auto;
+    padding: 15px 0;
+
+    .copydiv {
+      width: 100%;
+      
+      #last {
+        font-size: 13px;
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+// Mobile Small - 480px and below
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 40px 15px 25px;
+
+    .fotcont {
+      gap: 35px;
+      
+      .contitemsfooter {
+        gap: 20px;
+
+        h1 {
+          font-size: 20px;
+        }
+
+        a {
+          font-size: 14px;
+        }
+
+        .ragadiv {
+          gap: 12px;
+
+          span {
+            width: 42px;
+            height: 42px;
+
+            i {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .minicopyright {
+    .copydiv {
+      #last {
+        font-size: 12px;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+// Extra Small - 360px and below
+@media screen and (max-width: 360px) {
+  footer {
+    .fotcont {
+      .contitemsfooter {
+        h1 {
+          font-size: 18px;
+        }
+
+        a {
+          font-size: 13px;
+        }
+
+        .ragadiv {
+          span {
+            width: 40px;
+            height: 40px;
+
+            i {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

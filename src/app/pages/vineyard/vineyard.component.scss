@@ -1,0 +1,582 @@
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* Slideshow container */
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+main .main-textdiv {
+  color: white;
+  position: absolute;
+  z-index: 99;
+  width: 30%;
+  height: 40%;
+  margin-right: 150px;
+}
+main .main-textdiv h1 {
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+}
+main .main-textdiv h4 {
+  text-align: center;
+  width: 100%;
+}
+main .main-textdiv span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+main .main-textdiv .leftline {
+  width: 50px;
+  height: 1px;
+  background-color: white;
+}
+main .main-textdiv .rightline {
+  width: 50px;
+  height: 1px;
+  background-color: white;
+}
+main .main-textdiv h2 {
+  font-family: Ibarra Real Nova;
+  font-size: 23px;
+  line-height: 31px;
+  letter-spacing: 0.2em;
+  font-style: italic;
+}
+main .slideshow-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* Fading animation */
+  /* carousel.component.scss */
+}
+main .slideshow-container .mySlides {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: lightgray;
+  text-align: center;
+  line-height: 300px;
+  font-size: 2em;
+  overflow: hidden;
+}
+main .slideshow-container .mySlides.active {
+  opacity: 1;
+  z-index: 1;
+}
+main .slideshow-container .prev,
+main .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+main .slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+main .slideshow-container .fade {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .slideshow-container .fade img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: bottom;
+  object-position: bottom;
+}
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+main .slideshow-container .zoom-in {
+  animation: zoom-in 4.5s ease-in-out forwards;
+}
+
+//
+
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 138px 0px 150px 0px;
+  background-color: #f5f2e9;
+  margin-top: 60px;
+  .section-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    h2 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 50px;
+      line-height: 1.16em;
+      letter-spacing: 0.05em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+    }
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      // width: ;
+      color: #354c04;
+
+      hr {
+        width: 150px;
+        height: 1px;
+        outline: none;
+        border: none;
+        background-color: #354c04;
+      }
+    }
+  }
+}
+.section-right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: #333333;
+  font-size: 20px;
+  p {
+    --widgets-spacing: 20px 20px;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    .section-left {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+}
+
+// subimg
+
+.subimg {
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+  background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6)),
+    url(/assets/fotoebi/PSX_20221110_124933.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular",
+      "Lucida Grande" "Italianno", "Lucida Sans Unicode", cursive, Verdana,
+      sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 41px;
+    line-height: 1.0975609756em;
+    letter-spacing: 0.065em;
+    margin: 125px 75px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    text-align: center;
+  }
+}
+
+aside {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  .winesdiv {
+    width: 97%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 20px;
+    .winesitem {
+      position: relative;
+      width: 100%;
+      height: 520px;
+      background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .winesdiv {
+      width: 97%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 40px;
+      gap: 20px;
+      .winesitem {
+        position: relative;
+        width: 100%;
+        height: 520px;
+        background: linear-gradient(
+          rgba(15, 23, 43, 0.6),
+          rgba(15, 23, 43, 0.6)
+        );
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .winesdiv {
+      width: 97%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 40px;
+      gap: 20px;
+      .winesitem {
+        position: relative;
+        width: 100%;
+        height: 520px;
+        background: linear-gradient(
+          rgba(15, 23, 43, 0.6),
+          rgba(15, 23, 43, 0.6)
+        );
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
+#wine-wrapper {
+  width: 90%;
+  margin-top: 60px;
+  max-height: 420px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  gap: 5px;
+
+  .wrapitem {
+    min-width: 300px;
+    border-radius: 2px;
+    width: 100%;
+    height: 420px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 2px;
+    position: relative;
+    img {
+      position: absolute;
+      border-radius: 2px;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+    }
+  }
+  .wrapitem:hover img {
+    background-color: #0000005e;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+#wine-wrapper::-webkit-scrollbar {
+  height: 10px;
+}
+#wine-wrapper::-webkit-scrollbar-thumb {
+  padding-top: 5px;
+  width: 10px;
+  background-color: brown;
+}
+// ?------------------------------
+
+.dakiprod {
+  width: 70%;
+  height: 200px;
+  display: flex;
+  position: relative;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  align-items: center;
+}
+.prodlogo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: scale-down;
+  }
+}
+.proditem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  p {
+    text-align: center;
+  }
+}
+// ?-----------------------------
+
+.videoimgdiv {
+  width: 100%;
+  height: 75vh;
+  margin-top: 100px;
+  position: relative;
+  video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+  }
+  &::before{
+    content: '';
+    inset: 0px;
+    background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+    position: absolute;
+    z-index: 9999;
+
+  }
+  
+}
+
+// !----------------------
+
+.container {
+  height: 100vh;
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid #fff;
+}
+#team {
+  text-align: center;
+  font-size: 73px;
+  margin-top: 50px;
+}
+//
+.card {
+  height: 350px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 16px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+}
+.card0 {
+  background: url("/assets/fotoebi/team-1.jpg") left center no-repeat;
+  background-size: 400px;
+}
+.card0:hover {
+  background: url("/assets/fotoebi/team-1.jpg") center no-repeat;
+  background-size: 600px;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.card0:hover h4 {
+  opacity: 1;
+}
+
+.card1 {
+  background: url("/assets/fotoebi/team-2.jpg") left center no-repeat;
+  background-size: 400px;
+}
+.card1:hover {
+  background: url("/assets/fotoebi/team-2.jpg") center no-repeat;
+  background-size: 600px;
+}
+.card1:hover h2 {
+  opacity: 1;
+}
+.card1:hover h4 {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("/assets/fotoebi/team-4.jpg") left center no-repeat;
+  background-size: 400px;
+}
+.card2:hover {
+  background: url("/assets/fotoebi/team-4.jpg") center no-repeat;
+  background-size: 600px;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card2:hover h4 {
+  opacity: 1;
+}
+.card3 {
+  background: url("/assets/fotoebi/team-3.jpg") left center no-repeat;
+  background-size: 400px;
+}
+.card3:hover {
+  background: url("/assets/fotoebi/team-3.jpg") center no-repeat;
+  background-size: 600px;
+}
+.card3:hover h2 {
+  opacity: 1;
+}
+.card3:hover h4 {
+  opacity: 1;
+}
+
+.card4 {
+  background: url("/assets/fotoebi/team-6.jpg") left center no-repeat;
+  background-size: 400px;
+}
+.card4:hover {
+  background: url("/assets/fotoebi/team-6.jpg") center no-repeat;
+  background-size: 600px;
+}
+.card4:hover h2 {
+  opacity: 1;
+}
+.card4:hover h4 {
+  opacity: 1;
+}
+
+.card5 {
+  background: url("/assets/fotoebi/team-5.jpg") left center no-repeat;
+  background-size: 400px;
+}
+.card5:hover {
+  background: url("/assets/fotoebi/team-5.jpg") center no-repeat;
+  background-size: 600px;
+}
+.card5:hover h2 {
+  opacity: 1;
+}
+.card5:hover h4 {
+  opacity: 1;
+}

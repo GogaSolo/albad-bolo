@@ -1,0 +1,177 @@
+<main>
+  <div class="main-textdiv">
+    <h1>Dakishvili Family Wines</h1>
+    <h4>Life gets better when you can touch and feel finesse</h4>
+    <span>
+      <div class="leftline"></div>
+      <div class="years">
+        <h2>estd2020</h2>
+      </div>
+      <div class="rightline"></div>
+    </span>
+  </div>
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div
+      class="mySlides fade"
+      *ngFor="let slide of slides; let i = index"
+      [style.display]="isActiveSlide(i) ? 'block' : 'none'"
+    >
+      <img [src]="slide" class="zoom-in" [alt]="'Slide ' + (i + 1)" />
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" (click)="plusSlidesr(-1)">&#10094;</a>
+    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+  </div>
+  <br />
+</main>
+<!-- ! -->
+<section>
+  <div class="section-left">
+    <h2>
+      Inside every bottle <br />there is balance.<br />
+      discover our wines.
+    </h2>
+    <h3>
+      <hr />
+      French Provence Wine
+    </h3>
+  </div>
+  <div class="section-right">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut <br />labore et dolore magna aliqua. A condimentum
+      vitae sapien pellentesque habitant morbi <br />tristique senectus et.
+    </p>
+    <p>
+      Venenatis cras sed felis eget velit aliquet sagittis. Duis tristique
+      sollicitudin nibh sit amet<br />
+      commodo. Tellus at urna condimentum mattis pellentesque id nibh. Nisl
+      condimentum id <br />venenatis a condimentum vitae. Ut sem viverra aliquet
+      eget sit amet. Sapien eget mi proin<br />
+      sed libero enim sed faucibus.
+    </p>
+  </div>
+</section>
+<!-- ? -->
+<div class="subimg">
+  <h3>
+    Dakishvili Family Vineyards<br />
+    Life gets better when you can
+    <br />
+    touch and feel finesse
+  </h3>
+</div>
+<!-- ?aside -->
+<aside>
+  <div class="winesdiv">
+    <div class="winesitem">
+      <img src="/assets/fotoebi/about-4.jpg" alt="" />
+    </div>
+    <div class="winesitem">
+      <img src="/assets/fotoebi/h1-gallery-01.jpg" alt="" />
+    </div>
+    <div class="winesitem">
+      <img src="/assets/fotoebi/PSX_20230730_201048.jpg" alt="" />
+    </div>
+    <div class="winesitem">
+      <img src="/assets/fotoebi/h1-gallery-02.jpg" alt="" />
+    </div>
+  </div>
+</aside>
+<!-- ? -->
+<div class="asi">
+  <div class="asideleft">
+    <h1 id="asidelefth1">We are vineyard specialists first</h1>
+    <h3 id="sadzagloba">
+      <hr />
+      French Provence Wine
+    </h3>
+    <p>
+      Nusquam epicuri appellantur at sit. Mea etiam eu intellegat,
+      <br />
+      mel veritus percipitur vix. Eam tritani scripto ei, sea persius<br />
+      ne, eu pri semper curreret scripserit ei vis.
+    </p>
+  </div>
+  <div class="asideright">
+    <div class="leftimgbig">
+      <div class="img1">
+        <img src="/assets/fotoebi/PSX_20230113_011407.jpg" alt="" />
+      </div>
+    </div>
+    <div class="rightbigdiv">
+      <div class="img1">
+        <img src="/assets/fotoebi/შოკ.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+<div class="wineagw">
+  <h1>the fresh new wine stories</h1>
+  <div class="textarealdiv">
+    <span></span>
+    <p>estd 1970</p>
+    <span></span>
+  </div>
+  <div class="tripdiv">
+    <div class="wineagw-left">
+      <h3>quis nostrud exercitation ullaco laboris nisi ut aliquip</h3>
+      <p>Diane Hill</p>
+    </div>
+    <div class="wineagw-center">
+      <img src="/assets/imgs/h1-png-03.png" alt="" />
+    </div>
+    <div class="wineagw-right">
+      <h3>quis nostrud exercitation ullaco laboris nisi ut aliquip</h3>
+      <p>Diane Hill</p>
+    </div>
+  </div>
+</div>
+<!-- ! -->
+
+<div class="jos">
+  <h1>the fresh new wine stories</h1>
+  <div class="textarealdiv">
+    <span></span>
+    <p>estd 1970</p>
+    <span></span>
+  </div>
+  <div class="treewine">
+    <div class="wineagwak left">
+      <div class="imgdiv">
+        <img src="/assets/fotoebi/ttrs.jpg" alt="" />
+      </div>
+      <div class="textdiv">
+        <h2>Balance in all things inside every bottle</h2>
+      </div>
+      <div class="yearsdiv">
+        <p>December 29, 2022 / TastingWine Regions</p>
+      </div>
+    </div>
+    <div class="wineagwak center">
+      <div class="imgdiv">
+        <img src="./assets/fotoebi/venaxi.jpg" alt="" />
+      </div>
+      <div class="textdiv">
+        <h2>Balance in all things inside every bottle</h2>
+      </div>
+      <div class="yearsdiv">
+        <p>December 29, 2022 / TastingWine Regions</p>
+      </div>
+    </div>
+    <div class="wineagwak right">
+      <div class="imgdiv">
+        <img src="/assets/fotoebi/ttrs2.jpg" alt="" />
+      </div>
+      <div class="textdiv">
+        <h2>Balance in all things inside every bottle</h2>
+      </div>
+      <div class="yearsdiv">
+        <p>December 29, 2022 / TastingWine Regions</p>
+      </div>
+    </div>
+  </div>
+</div>

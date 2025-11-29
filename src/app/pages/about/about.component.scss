@@ -1,0 +1,926 @@
+.subimg {
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+  background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6)),
+    url(/assets/fotoebi/family.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  .main-textdiv {
+    color: white;
+    position: absolute;
+    z-index: 99;
+  }
+  .main-textdiv h1 {
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+  }
+  .main-textdiv h4 {
+    text-align: center;
+    width: 100%;
+  }
+  .main-textdiv span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .main-textdiv .leftline {
+    width: 50px;
+    height: 1px;
+    background-color: white;
+  }
+  .main-textdiv .rightline {
+    width: 50px;
+    height: 1px;
+    background-color: white;
+  }
+  .main-textdiv h2 {
+    font-family: Ibarra Real Nova;
+    font-size: 23px;
+    line-height: 31px;
+    letter-spacing: 0.2em;
+    font-style: italic;
+  }
+}
+
+.wineagw {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #243305;
+    font-size: 40px;
+    line-height: 1.16em;
+    letter-spacing: 0.2em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .textarealdiv {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    span {
+      width: 100px;
+      height: 1px;
+      background-color: #354c044d;
+      border: none;
+      outline: none;
+    }
+    p {
+      margin: 0;
+      font-family: "Ibarra Real Nova", serif;
+      font-style: italic;
+      font-size: 20px;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      vertical-align: middle;
+      flex-wrap: wrap;
+      color: #354c04;
+    }
+  }
+
+  .tripdiv {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wineagw-center {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      img {
+        min-width: 50%;
+        min-height: 50%;
+        display: block;
+        object-fit: cover;
+      }
+    }
+    .wineagw-left {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 28px;
+      line-height: 1.1785714286em;
+      letter-spacing: 0.085em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+    }
+    h3 {
+      max-width: 340px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    p {
+      margin: 0;
+      font-family: "Ibarra Real Nova", serif;
+      font-style: italic;
+      font-size: 17px;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      vertical-align: middle;
+      flex-wrap: wrap;
+      color: var(--qode-main-color);
+    }
+    .wineagw-right {
+      width: 100%;
+      gap: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 28px;
+      line-height: 1.1785714286em;
+      letter-spacing: 0.085em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wineagw {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wineagw {
+    width: 100%;
+    height: auto;
+    h1 {
+      font-size: 20px;
+    }
+    .tripdiv {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3 {
+      font-size: 23px;
+    }
+  }
+}
+
+.fixedimg {
+  width: 100%;
+  height: 80vh;
+  background: fixed url(/assets/fotoebi/family.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  .righttext {
+    width: 100%;
+    max-width: 300px;
+    max-height: 100px;
+    height: 100%;
+    color: white;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fixedimg {
+    margin-top: 400px;
+  }
+}
+//
+.asi {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  .asideleft {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    h1 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 50px;
+      line-height: 1.16em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+    }
+    h3 {
+      font-family: "Ibarra Real Nova", serif;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #354c04;
+      padding-right: 400px;
+
+      hr {
+        width: 30px;
+        height: 1px;
+        outline: none;
+        border: none;
+        background-color: #354c04;
+      }
+    }
+    p {
+      margin-top: 40px;
+      color: #333333;
+      font-size: 16px;
+      line-height: 1.16em;
+      letter-spacing: 0.05em;
+      font-family: "Barlow Condensed", sans-serif;
+    }
+  }
+  .asideright {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+    position: relative;
+    .leftimgbig {
+      width: 100%;
+      height: 90%;
+      .img1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      h3 {
+        margin-top: 30px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 24px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+      h5 {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 13px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+    }
+    .rightbigdiv {
+      width: 100%;
+      height: 90%;
+      .img1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      h3 {
+        margin-top: 30px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 24px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+      h5 {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 13px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+@media screen and (max-width: 370px) {
+  .asi {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .asi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    .asideleft {
+      margin-top: 240px;
+      width: 100%;
+      height: 30%;
+      #asidelefth1 {
+        padding: 20px;
+      }
+      
+      #sadzagloba {
+        display: none;
+      }
+    }
+    .asideright {
+      width: 100%;
+      display: flex;
+      gap: 130px;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 40px;
+
+      .rightbigdiv {
+        width: 100%;
+        height: 500px;
+        h3 {
+          font-family: 16px;
+        }
+      }
+      .leftimgbig {
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+  .wineagw {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .asi {
+    width: 100%;
+    height: 500px;
+    .asideleft {
+      padding: 20px;
+      h1 {
+        font-size: 30px;
+      }
+      h3 {
+        display: none;
+        font-family: "Ibarra Real Nova", serif;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #354c04;
+        padding-right: 100px;
+      }
+      p {
+        margin-top: 30px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1020px) {
+  .asi {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .asideleft {
+      height: 20%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      p {
+        display: none;
+      }
+    }
+    .asideright {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    .rightbigdiv {
+      width: 100%;
+      height: 90%;
+
+      .img1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      h3 {
+        margin-top: 30px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 24px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+      h5 {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 13px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+//
+mark {
+  font-size: 50px;
+  background: none;
+  color: orange;
+}
+
+.wazaa {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f2e9;
+  gap: 10px;
+  h1 {
+    text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #243305;
+    font-size: 40px;
+    line-height: 1.16em;
+    letter-spacing: 0.2em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .textdivar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    span {
+      width: 100px;
+      height: 1px;
+      background-color: #354c044d;
+      border: none;
+      outline: none;
+    }
+    p {
+      margin: 0;
+      font-family: "Ibarra Real Nova", serif;
+      font-style: italic;
+      font-size: 20px;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      vertical-align: middle;
+      flex-wrap: wrap;
+      color: #354c04;
+    }
+  }
+
+  .triplediv {
+    width: 70%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wazaa-left {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 28px;
+      line-height: 1.1785714286em;
+      letter-spacing: 0.085em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+    }
+    h3 {
+      max-width: 340px;
+      text-align: center;
+    }
+    p {
+      margin: 0;
+      font-family: "Ibarra Real Nova", serif;
+      font-style: italic;
+      font-size: 17px;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      vertical-align: middle;
+      flex-wrap: wrap;
+      color: var(--qode-main-color);
+    }
+    .wazaa-right {
+      width: 100%;
+      gap: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 28px;
+      line-height: 1.1785714286em;
+      letter-spacing: 0.085em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wazaa {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wazaa {
+    width: 100%;
+    height: auto;
+    h1 {
+      font-size: 30px;
+    }
+    .triplediv {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3 {
+      font-size: 23px;
+    }
+  }
+}
+// !
+//   aside
+aside {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  .winesdiv {
+    width: 97%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 20px;
+    .winesitem {
+      position: relative;
+      width: 100%;
+      height: 320px;
+      background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .winesdiv {
+      width: 97%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 40px;
+      gap: 20px;
+      .winesitem {
+        position: relative;
+        width: 100%;
+        height: 420px;
+        background: linear-gradient(
+          rgba(15, 23, 43, 0.6),
+          rgba(15, 23, 43, 0.6)
+        );
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .winesdiv {
+      width: 97%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 40px;
+      gap: 20px;
+      .winesitem {
+        position: relative;
+        width: 100%;
+        height: 520px;
+        background: linear-gradient(
+          rgba(15, 23, 43, 0.6),
+          rgba(15, 23, 43, 0.6)
+        );
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
+// !
+.wineagw {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 100px;
+  h1 {
+    text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #243305;
+    font-size: 40px;
+    line-height: 1.16em;
+    letter-spacing: 0.2em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .textarealdiv {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    span {
+      width: 100px;
+      height: 1px;
+      background-color: #354c044d;
+      border: none;
+      outline: none;
+    }
+    p {
+      margin: 0;
+      font-family: "Ibarra Real Nova", serif;
+      font-style: italic;
+      font-size: 20px;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      vertical-align: middle;
+      flex-wrap: wrap;
+      color: #354c04;
+    }
+  }
+
+  .tripdiv {
+    margin-top: 40px;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mark {
+      font-size: 50px;
+      background: none;
+      color: orange;
+    }
+    .wineagw-left {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 28px;
+      line-height: 1.1785714286em;
+      letter-spacing: 0.085em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+    }
+    h3 {
+      max-width: 340px;
+      text-align: center;
+      height: 104px;
+      border-left: 3px solid orange;
+      max-height: 300px;
+    }
+    p {
+      margin: 0;
+      font-family: "Ibarra Real Nova", serif;
+      font-style: italic;
+      font-size: 17px;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      vertical-align: middle;
+      flex-wrap: wrap;
+      color: var(--qode-main-color);
+    }
+    .wineagw-right {
+      width: 100%;
+      gap: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 28px;
+      line-height: 1.1785714286em;
+      letter-spacing: 0.085em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wineagw {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wineagw {
+    width: 100%;
+    height: auto;
+    h1 {
+      font-size: 30px;
+    }
+    .tripdiv {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3 {
+      font-size: 23px;
+    }
+  }
+}
+
+@media screen and (max-width: 591px) {
+  .wineagw {
+    width: 100%;
+    height: auto;
+    margin-top: 350px;
+    h1 {
+      font-size: 30px;
+    }
+    .textarealdiv {
+      p {
+        letter-spacing: 0;
+        font-size: 13px;
+      }
+    }
+    .tripdiv {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3 {
+      font-size: 23px;
+    }
+  }
+}
+
+.asideleftP{
+  max-width: 800px;
+}

@@ -1,0 +1,345 @@
+header {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  .header-main {
+    width: 100%;
+    height: 30px;
+    display: flex;
+  }
+  .header-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1px solid white;
+    #akas1 {
+      width: 100%;
+      text-align: end;
+      color: #ffffff;
+      font-family: Ibarra Real Nova;
+      font-size: 16px;
+      line-height: 31px;
+      letter-spacing: 0.02em;
+      font-style: italic;
+    }
+    #akas2 {
+      width: 100%;
+      text-align: start;
+      color: #ffffff;
+      font-family: Ibarra Real Nova;
+      font-size: 16px;
+      line-height: 31px;
+      letter-spacing: 0.02em;
+      font-style: italic;
+    }
+  }
+}
+
+//
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  .navbardiv {
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom-color: rgba(255, 255, 255, 0);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    display: flex;
+    align-items: center;
+    .navleft {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      ul {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        white-space: nowrap;
+        list-style: none;
+        li {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          margin: 0 23px;
+          a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: 0.3s ease-in-out;
+            font-size: 23px;
+            font-weight: 500;
+
+          }
+          a:focus {
+            text-decoration: line-through;
+            color: #969696;
+          }
+        }
+      }
+      .searchdiv {
+        gap: 10px;
+      }
+      input {
+        background: none;
+        cursor: none;
+        font-family: "Ibarra Real Nova", serif;
+        font-style: italic;
+        font-size: 0px;
+        letter-spacing: 0.02em;
+        display: inline-flex;
+        vertical-align: middle;
+        flex-wrap: wrap;
+        color: inherit;
+        line-height: 1em;
+        padding: 5px 0;
+        width: 160px;
+        border-color: transparent;
+        transition: width 0.62s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        outline: none;
+        margin-left: 10px;
+        color: white;
+      }
+      input::placeholder {
+        color: white;
+      }
+      i {
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .navright {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      ul {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        white-space: nowrap;
+        list-style: none;
+        li {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          margin: 0 23px;
+          a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: 0.3s ease-in-out;
+            font-size: 23px;
+            font-weight: 500;
+
+          }
+          a:focus {
+            text-decoration: line-through;
+            color: #969696;
+          }
+        }
+        
+      }
+      .language {
+        gap: 30px;
+        button {
+          width: 70px;
+          background: none;
+          border: none;
+          color: #ffffff;
+          font-family: Ibarra Real Nova;
+          font-size: 16px;
+          line-height: 31px;
+          letter-spacing: 0.2em;
+          font-style: italic;
+          &:focus{
+            text-decoration: line-through;
+            color: #969696;
+          }
+        }
+        
+      }
+    }
+    // logo
+    .logo {
+      display: block;
+      margin: auto 0;
+      width: auto;
+      height: 100%;
+      transition: opacity 0.3s ease;
+      position: relative;
+      //
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        height: 150px;
+        max-height: 100%;
+        box-sizing: content-box;
+      }
+    }
+  }
+}
+#nav2 {
+  display: none;
+}
+// nav resp
+@media screen and (max-width: 1115px) {
+  header {
+    background-color: white;
+    .header-div {
+      display: none;
+    }
+    .header-main {
+      display: none;
+    }
+    nav {
+      display: none;
+    }
+    #nav2 {
+      width: 100%;
+      height: 80px;
+      background-color: white;
+      display: flex;
+      .submenumiddlepxdiv {
+        padding-left: 60px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        a {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          img {
+            width: 100px;
+            height: 70px;
+            min-height: 100%;
+            position: absolute;
+            object-fit: cover;
+            cursor: pointer;
+          }
+        }
+
+        .burgerBtn {
+          width: 45px;
+          height: auto;
+          background: none;
+          border: none;
+          gap: 10px;
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          span {
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        .burgerBtn:hover > #kiks {
+          background-color: #333;
+          transform: translateX(-10px);
+        }
+        .burgerBtn:hover > #akaers {
+          background-color: #333;
+          transform: translateX(20px);
+        }
+      }
+      .raiss {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+  padding: 20px;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .mobile-menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li a {
+        display: block;
+        padding: 10px 0;
+        color: black;
+        font-family: Ibarra Real Nova;
+        font-size: 18px;
+        text-decoration: none;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+
+    .mobile-language {
+      display: flex;
+      gap: 10px;
+
+      button {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid black;
+        background: none;
+        font-family: Ibarra Real Nova;
+        font-size: 16px;
+        cursor: pointer;
+
+        &.active {
+          background: black;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.mobile-logo {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+
+  img {
+    max-width: 120px;
+    height: auto;
+  }
+}
+

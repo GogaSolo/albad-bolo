@@ -1,0 +1,715 @@
+main {
+  width: 100%;
+  height: auto;
+}
+figure {
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  min-height: 600px;
+  background: url(/assets/fotoebi/trs1.jpg)center bottom 9% no-repeat;
+  background-size:cover;
+  
+}
+
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 138px 0px 150px 0px;
+  .section-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    h2 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 40px;
+      line-height: 1.16em;
+      letter-spacing: 0.05em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+    }
+    p {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 26px;
+      line-height: 1.16em;
+      letter-spacing: 0.05em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+    }
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #354c04;
+
+      hr {
+        width: 200px;
+        height: 1px;
+        outline: none;
+        border: none;
+        background-color: #354c04;
+      }
+    }
+  }
+}
+.section-right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: #333333;
+  font-size: 20px;
+  p {
+    --widgets-spacing: 20px 20px;
+    width: 100%;
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    .section-left {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+}
+
+$colorcode: #243305;
+
+
+.figcaption {
+  width: 100%;
+  height: 70vh;
+  background: url(/assets/fotoebi/cellar1.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 1070px) {
+  .figcaption {
+    width: 100%;
+    height: 30vh;
+    background: url(/assets/fotoebi/cellar1.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+//
+
+.asi {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  .btsat {
+    font-size: 40px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  .leftline {
+    width: 50px;
+    height: 1px;
+    background-color: #243305;
+  }
+  .rightline {
+    width: 50px;
+    height: 1px;
+    background-color: #243305;
+  }
+  aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .winesdiv {
+      width: 97%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+      gap: 20px;
+      .winesitem {
+        position: relative;
+        width: 100%;
+        height: 520px;
+        background: linear-gradient(
+          rgba(15, 23, 43, 0.6),
+          rgba(15, 23, 43, 0.6)
+        );
+        overflow: hidden;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          object-position: center;
+          transition: 300ms;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1250px) {
+    aside {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+
+      .winesdiv {
+        width: 97%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+        gap: 20px;
+        .winesitem {
+          position: relative;
+          width: 100%;
+          height: 520px;
+          background: linear-gradient(
+            rgba(15, 23, 43, 0.6),
+            rgba(15, 23, 43, 0.6)
+          );
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+            mix-blend-mode: multiply;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    aside {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+
+      .winesdiv {
+        width: 97%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+        gap: 20px;
+        .winesitem {
+          position: relative;
+          width: 100%;
+          height: 520px;
+          background: linear-gradient(
+            rgba(15, 23, 43, 0.6),
+            rgba(15, 23, 43, 0.6)
+          );
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+  }
+
+  .asideleft {
+    h1 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #243305;
+      font-size: 50px;
+      line-height: 1.16em;
+      margin: 25px 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+    }
+    h3 {
+      font-family: "Ibarra Real Nova", serif;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #354c04;
+      padding-right: 400px;
+      text-align: center;
+
+      hr {
+        width: 200px;
+        height: 1px;
+        outline: none;
+        border: none;
+        background-color: #354c04;
+      }
+    }
+    p {
+      margin-top: 40px;
+      color: #333333;
+      font-size: 16px;
+      line-height: 1.16em;
+      letter-spacing: 0.05em;
+      font-family: "Barlow Condensed", sans-serif;
+    }
+  }
+  .asideright {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+    position: relative;
+    .leftimgbig {
+      width: 100%;
+      height: 90%;
+      .img1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      h3 {
+        margin-top: 30px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 24px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+      h5 {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 13px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+    }
+    .rightbigdiv {
+      width: 100%;
+      height: 90%;
+      .img1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      h3 {
+        width: 100%;
+        margin-top: 30px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 24px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+      h5 {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 13px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .asi {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width:750px) {
+  .section-right{
+    p{
+      max-width: 500px;
+    }
+  }
+}
+@media screen and (max-width:410px) {
+  .section-right{
+    p{
+      max-width: 300px;
+    }
+  }
+}
+@media screen and (max-width: 590px) {
+  .section-right{
+    p{
+      max-width: 400px;
+    }
+  }
+  .asi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    .asideleft {
+      margin-top: 240px;
+      width: 100%;
+      height: 30%;
+      #asidelefth1 {
+        padding: 20px;
+      }
+      #sadzagloba {
+        display: none;
+      }
+    }
+    .asideright {
+      width: 100%;
+      display: flex;
+      gap: 130px;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 40px;
+
+      .rightbigdiv {
+        width: 100%;
+        height: 500px;
+        h3 {
+          font-family: 16px;
+        }
+      }
+      .leftimgbig {
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+  .wineagw {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .asi {
+    width: 100%;
+    height: 500px;
+    .asideleft {
+      padding: 20px;
+      h1 {
+        font-size: 30px;
+      }
+      h3 {
+        display: none;
+        font-family: "Ibarra Real Nova", serif;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #354c04;
+        padding-right: 100px;
+      }
+      p {
+        margin-top: 30px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1020px) {
+  .asi {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .asideleft {
+      height: 20%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      p {
+        display: none;
+      }
+    }
+    .asideright {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    .rightbigdiv {
+      width: 100%;
+      height: 90%;
+
+      .img1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      h3 {
+        margin-top: 30px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 24px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+      h5 {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #243305;
+        font-size: 13px;
+        line-height: 1.16em;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+//
+.map {
+  margin-top: 100px;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  iframe {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.wineagw {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #243305;
+    font-size: 40px;
+    line-height: 1.16em;
+    letter-spacing: 0.2em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .textarealdiv {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    span {
+      width: 100px;
+      height: 1px;
+      background-color: #354c044d;
+      border: none;
+      outline: none;
+    }
+    p {
+      margin: 0;
+      font-family: "Ibarra Real Nova", serif;
+      font-style: italic;
+      font-size: 20px;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      vertical-align: middle;
+      flex-wrap: wrap;
+      color: #354c04;
+    }
+  }
+}
+//   aside
+aside {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  .winesdiv {
+    width: 97%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 20px;
+    .winesitem {
+      position: relative;
+      width: 100%;
+      height: 520px;
+      background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+      overflow: hidden;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+        transition: 300ms;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    .winesdiv {
+      width: 97%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 40px;
+      gap: 20px;
+      .winesitem {
+        position: relative;
+        width: 100%;
+        height: 520px;
+        background: linear-gradient(
+          rgba(15, 23, 43, 0.6),
+          rgba(15, 23, 43, 0.6)
+        );
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .winesdiv {
+      width: 97%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 40px;
+      gap: 20px;
+      .winesitem {
+        position: relative;
+        width: 100%;
+        height: 520px;
+        background: linear-gradient(
+          rgba(15, 23, 43, 0.6),
+          rgba(15, 23, 43, 0.6)
+        );
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+  .wineagw {
+    h1 {
+      font-size: 32px;
+    }
+    .textarealdiv {
+      margin-top: 50px;
+    }
+  }
+}
