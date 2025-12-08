@@ -1,0 +1,427 @@
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.main-textdiv {
+  color: white;
+  position: absolute;
+  z-index: 99;
+  width: clamp(280px, 90%, 500px);
+  padding: clamp(20px, 5vw, 40px);
+  margin-right: clamp(20px, 8vw, 150px);
+  margin-bottom: clamp(40px, 8vh, 100px);
+}
+
+.main-textdiv h1 {
+  font-size: clamp(32px, 7vw, 60px);
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.main-textdiv h4 {
+  text-align: center;
+  font-size: clamp(14px, 2.5vw, 18px);
+  font-weight: 400;
+}
+
+.main-textdiv span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 10px);
+  margin-top: 20px;
+}
+
+.leftline, .rightline {
+  width: clamp(30px, 8vw, 50px);
+  height: 1px;
+  background-color: white;
+}
+
+.main-textdiv h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: clamp(14px, 2.5vw, 23px);
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  font-style: italic;
+}
+
+.slideshow-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mySlides {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mySlides.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fade img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* Section */
+section {
+  width: 100%;
+  display: flex;
+  padding: clamp(60px, 12vw, 138px) clamp(20px, 5vw, 60px) clamp(60px, 12vw, 150px);
+  background-color: #f5f2e9;
+  margin-top: 60px;
+  gap: clamp(30px, 5vw, 60px);
+  flex-wrap: wrap;
+}
+
+.section-left {
+  flex: 1;
+  min-width: min(100%, 300px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-left h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #243305;
+  font-size: clamp(32px, 6vw, 50px);
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  margin: 25px 0;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.section-left h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #354c04;
+}
+
+.section-left hr {
+  width: clamp(80px, 20vw, 150px);
+  height: 1px;
+  border: none;
+  background-color: #354c04;
+}
+
+.section-right {
+  flex: 1;
+  min-width: min(100%, 300px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  font-size: clamp(16px, 2.5vw, 20px);
+  line-height: 1.7;
+  padding: 0 clamp(15px, 3vw, 20px);
+}
+
+.section-right p {
+  max-width: 800px;
+  text-align: justify;
+}
+
+/* Video Section */
+.videoimgdiv {
+  width: 100%;
+  height: clamp(400px, 60vh, 75vh);
+  margin-top: clamp(60px, 10vw, 100px);
+  position: relative;
+  overflow: hidden;
+}
+
+.videoimgdiv::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+  z-index: 1;
+}
+
+.videoimgdiv video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* Wine Wrapper Carousel */
+#wine-wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: 60px auto 0;
+  max-height: clamp(300px, 50vw, 420px);
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: clamp(8px, 1vw, 15px);
+  padding-bottom: 15px;
+}
+
+.wrapitem {
+  min-width: clamp(220px, 35vw, 300px);
+  height: clamp(300px, 50vw, 420px);
+  border-radius: 4px;
+  background-color: #ddd;
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.wrapitem:hover {
+  transform: scale(1.02);
+}
+
+.wrapitem img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+
+#wine-wrapper::-webkit-scrollbar {
+  height: 10px;
+}
+
+#wine-wrapper::-webkit-scrollbar-thumb {
+  background-color: #8b4513;
+  border-radius: 5px;
+}
+
+#wine-wrapper::-webkit-scrollbar-track {
+  background-color: #f5f2e9;
+}
+
+/* Team Cards Container */
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: clamp(40px, 8vw, 80px) clamp(20px, 3vw, 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(20px, 3vw, 30px);
+}
+
+#team {
+  text-align: center;
+  font-size: clamp(36px, 8vw, 73px);
+  margin: clamp(30px, 5vw, 50px) 0;
+  width: 100%;
+}
+
+.border {
+  height: clamp(320px, 45vw, 369px);
+  width: clamp(260px, 35vw, 290px);
+  background: transparent;
+  border-radius: 10px;
+  transition: border 0.3s;
+  position: relative;
+}
+
+.border:hover {
+  border: 1px solid #fff;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  background-size: cover !important;
+  background-position: center !important;
+  transition: background-size 0.5s ease;
+}
+
+.card h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: clamp(20px, 3vw, 28px);
+  margin: 10px 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.card h4 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: clamp(14px, 2vw, 18px);
+  opacity: 0;
+  transition: opacity 0.5s;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.card:hover h2,
+.card:hover h4 {
+  opacity: 1;
+}
+
+.card0 {
+  background: url("/assets/fotoebi/team-1.jpg") center/cover;
+}
+
+.card1 {
+  background: url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600") center/cover;
+}
+
+.card2 {
+  background: url("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600") center/cover;
+}
+
+.card3 {
+  background: url("https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600") center/cover;
+}
+
+.card4 {
+  background: url("https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600") center/cover;
+}
+
+.card5 {
+  background: url("https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600") center/cover;
+}
+
+.card:hover {
+  background-size: 110% !important;
+}
+
+/* Logo Section */
+.dakiprod {
+  width: clamp(280px, 90%, 800px);
+  height: clamp(150px, 25vw, 200px);
+  display: flex;
+  margin: clamp(60px, 10vw, 80px) auto 0;
+  align-items: center;
+  gap: 20px;
+}
+
+.prodlogo {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prodlogo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.proditem {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proditem p {
+  text-align: center;
+  font-size: clamp(14px, 2.5vw, 18px);
+  line-height: 1.6;
+  padding: 0 15px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  main {
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .main-textdiv {
+    margin-right: 0;
+    width: 90%;
+    margin-bottom: 60px;
+  }
+  section {
+    flex-direction: column;
+  }
+  .section-right p br {
+    display: none;
+  }
+  #wine-wrapper {
+    width: 95%;
+  }
+  .wrapitem {
+    min-width: clamp(180px, 45vw, 250px);
+  }
+  .container {
+    gap: 20px;
+  }
+  .border {
+    width: clamp(240px, 80vw, 290px);
+    height: clamp(300px, 70vw, 369px);
+  }
+  .dakiprod {
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-textdiv {
+    padding: 20px;
+  }
+  .section-right p {
+    font-size: 15px;
+  }
+  .wrapitem {
+    min-width: 200px;
+  }
+  .border {
+    width: 90%;
+    max-width: 320px;
+  }
+}/*# sourceMappingURL=vineyard.component.css.map */

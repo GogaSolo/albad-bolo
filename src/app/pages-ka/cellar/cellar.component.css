@@ -1,0 +1,689 @@
+main {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  min-height: 600px;
+  background: url(/assets/fotoebi/trs1.jpg) center bottom 9% no-repeat;
+  background-size: cover;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 138px 0px 150px 0px;
+}
+section .section-left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+section .section-left h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #243305;
+  font-size: 40px;
+  line-height: 1.16em;
+  letter-spacing: 0.05em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+section .section-left p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #243305;
+  font-size: 26px;
+  line-height: 1.16em;
+  letter-spacing: 0.05em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+section .section-left h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #354c04;
+}
+section .section-left h3 hr {
+  width: 200px;
+  height: 1px;
+  outline: none;
+  border: none;
+  background-color: #354c04;
+}
+
+.section-right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: #333333;
+  font-size: 20px;
+}
+.section-right p {
+  --widgets-spacing: 20px 20px;
+  width: 100%;
+  max-width: 700px;
+}
+
+@media screen and (max-width: 1250px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  section .section-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+.figcaption {
+  width: 100%;
+  height: 70vh;
+  background: url(/assets/fotoebi/cellar1.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 1070px) {
+  .figcaption {
+    width: 100%;
+    height: 30vh;
+    background: url(/assets/fotoebi/cellar1.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+.asi {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+.asi span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.asi .btsat {
+  font-size: 40px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.asi .leftline {
+  width: 50px;
+  height: 1px;
+  background-color: #243305;
+}
+.asi .rightline {
+  width: 50px;
+  height: 1px;
+  background-color: #243305;
+}
+.asi aside {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.asi aside .winesdiv {
+  width: 97%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px;
+}
+.asi aside .winesdiv .winesitem {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+  overflow: hidden;
+}
+.asi aside .winesdiv .winesitem img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 300ms;
+}
+.asi aside .winesdiv .winesitem img:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1250px) {
+  .asi aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .asi aside .winesdiv {
+    width: 97%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .asi aside .winesdiv .winesitem {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+  }
+  .asi aside .winesdiv .winesitem img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    mix-blend-mode: multiply;
+  }
+}
+@media screen and (max-width: 700px) {
+  .asi aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .asi aside .winesdiv {
+    width: 97%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .asi aside .winesdiv .winesitem {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+  }
+  .asi aside .winesdiv .winesitem img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+.asi .asideleft h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #243305;
+  font-size: 50px;
+  line-height: 1.16em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.asi .asideleft h3 {
+  font-family: "Ibarra Real Nova", serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #354c04;
+  padding-right: 400px;
+  text-align: center;
+}
+.asi .asideleft h3 hr {
+  width: 200px;
+  height: 1px;
+  outline: none;
+  border: none;
+  background-color: #354c04;
+}
+.asi .asideleft p {
+  margin-top: 40px;
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.16em;
+  letter-spacing: 0.05em;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.asi .asideright {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 30px;
+  gap: 10px;
+  position: relative;
+}
+.asi .asideright .leftimgbig {
+  width: 100%;
+  height: 90%;
+}
+.asi .asideright .leftimgbig .img1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.asi .asideright .leftimgbig .img1 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.asi .asideright .leftimgbig h3 {
+  margin-top: 30px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #243305;
+  font-size: 24px;
+  line-height: 1.16em;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.asi .asideright .leftimgbig h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #243305;
+  font-size: 13px;
+  line-height: 1.16em;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.asi .asideright .rightbigdiv {
+  width: 100%;
+  height: 90%;
+}
+.asi .asideright .rightbigdiv .img1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.asi .asideright .rightbigdiv .img1 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.asi .asideright .rightbigdiv h3 {
+  width: 100%;
+  margin-top: 30px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #243305;
+  font-size: 24px;
+  line-height: 1.16em;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.asi .asideright .rightbigdiv h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #243305;
+  font-size: 13px;
+  line-height: 1.16em;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 370px) {
+  .asi {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section-right p {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .section-right p {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .section-right p {
+    max-width: 400px;
+  }
+  .asi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .asi .asideleft {
+    margin-top: 240px;
+    width: 100%;
+    height: 30%;
+  }
+  .asi .asideleft #asidelefth1 {
+    padding: 20px;
+  }
+  .asi .asideleft #sadzagloba {
+    display: none;
+  }
+  .asi .asideright {
+    width: 100%;
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .asi .asideright .rightbigdiv {
+    width: 100%;
+    height: 500px;
+  }
+  .asi .asideright .rightbigdiv h3 {
+    font-family: 16px;
+  }
+  .asi .asideright .leftimgbig {
+    width: 100%;
+    height: 500px;
+  }
+  .wineagw {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .asi {
+    width: 100%;
+    height: 500px;
+  }
+  .asi .asideleft {
+    padding: 20px;
+  }
+  .asi .asideleft h1 {
+    font-size: 30px;
+  }
+  .asi .asideleft h3 {
+    display: none;
+    font-family: "Ibarra Real Nova", serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #354c04;
+    padding-right: 100px;
+  }
+  .asi .asideleft p {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .asi {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .asi .asideleft {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .asi .asideleft p {
+    display: none;
+  }
+  .asi .asideright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .asi .rightbigdiv {
+    width: 100%;
+    height: 90%;
+  }
+  .asi .rightbigdiv .img1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .asi .rightbigdiv .img1 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .asi .rightbigdiv h3 {
+    margin-top: 30px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #243305;
+    font-size: 24px;
+    line-height: 1.16em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .asi .rightbigdiv h5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #243305;
+    font-size: 13px;
+    line-height: 1.16em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+}
+.map {
+  margin-top: 100px;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map iframe {
+  width: 80%;
+  height: 80%;
+}
+
+.wineagw {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.wineagw h1 {
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #243305;
+  font-size: 40px;
+  line-height: 1.16em;
+  letter-spacing: 0.2em;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.wineagw .textarealdiv {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.wineagw .textarealdiv span {
+  width: 100px;
+  height: 1px;
+  background-color: rgba(53, 76, 4, 0.3019607843);
+  border: none;
+  outline: none;
+}
+.wineagw .textarealdiv p {
+  margin: 0;
+  font-family: "Ibarra Real Nova", serif;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  color: #354c04;
+}
+
+aside {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+aside .winesdiv {
+  width: 97%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px;
+}
+aside .winesdiv .winesitem {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+  overflow: hidden;
+}
+aside .winesdiv .winesitem img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 300ms;
+}
+aside .winesdiv .winesitem img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1250px) {
+  aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  aside .winesdiv {
+    width: 97%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    gap: 20px;
+  }
+  aside .winesdiv .winesitem {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+  }
+  aside .winesdiv .winesitem img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  aside .winesdiv {
+    width: 97%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 40px;
+    gap: 20px;
+  }
+  aside .winesdiv .winesitem {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6));
+  }
+  aside .winesdiv .winesitem img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .wineagw h1 {
+    font-size: 32px;
+  }
+  .wineagw .textarealdiv {
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=cellar.component.css.map */

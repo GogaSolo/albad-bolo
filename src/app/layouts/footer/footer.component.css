@@ -1,0 +1,257 @@
+.minicopyright {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAF9F5;
+}
+.minicopyright .copydiv {
+  width: 90%;
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #243305;
+  border-top: 1px solid #354c04;
+}
+.minicopyright .copydiv #last {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+}
+
+footer {
+  margin-top: 60px;
+  width: 100%;
+  font-size: 24px;
+  min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAF9F5;
+  padding: 60px 20px 40px;
+}
+footer .fotcont {
+  width: 100%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+footer .fotcont .contitemsfooter {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .fotcont .contitemsfooter h1 {
+  position: relative;
+  display: inline-block;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-size: 28px;
+  color: #243305;
+  margin-bottom: 10px;
+  padding-right: 60px;
+}
+footer .fotcont .contitemsfooter h1::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: 0;
+  margin-top: -1px;
+  background-color: #243305;
+}
+footer .fotcont .contitemsfooter .navlist,
+footer .fotcont .contitemsfooter .navlistkkrs,
+footer .fotcont .contitemsfooter .navlistkkrs222 {
+  width: 100%;
+}
+footer .fotcont .contitemsfooter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+footer .fotcont .contitemsfooter ul li {
+  width: 100%;
+}
+footer .fotcont .contitemsfooter a {
+  position: relative;
+  display: inline-block;
+  color: #354c04;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding-bottom: 4px;
+}
+footer .fotcont .contitemsfooter a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #354c04;
+  transition: width 0.3s ease;
+}
+footer .fotcont .contitemsfooter a:hover {
+  color: #243305;
+}
+footer .fotcont .contitemsfooter a:hover::before {
+  width: 100%;
+}
+footer .fotcont .contitemsfooter .ragadiv {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+footer .fotcont .contitemsfooter .ragadiv span {
+  border: 1px solid #354c04;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  color: #243305;
+  cursor: pointer;
+}
+footer .fotcont .contitemsfooter .ragadiv span i {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+footer .fotcont .contitemsfooter .ragadiv span:hover {
+  background-color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+footer .fotcont .contitemsfooter .ragadiv span:hover .fa-facebook-f {
+  color: #1877f2;
+}
+footer .fotcont .contitemsfooter .ragadiv span:hover .fa-instagram {
+  color: #c13584;
+}
+footer .fotcont .contitemsfooter .ragadiv span:hover .fa-youtube {
+  color: #ff0000;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .fotcont {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+  }
+  footer .fotcont .contitemsfooter h1 {
+    font-size: 24px;
+  }
+  footer .fotcont .contitemsfooter a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 50px 20px 30px;
+    min-height: auto;
+  }
+  footer .fotcont {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  footer .fotcont .contitemsfooter {
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+  footer .fotcont .contitemsfooter h1 {
+    font-size: 22px;
+    padding-right: 0;
+  }
+  footer .fotcont .contitemsfooter h1::after {
+    display: none;
+  }
+  footer .fotcont .contitemsfooter ul {
+    align-items: center;
+    gap: 10px;
+  }
+  footer .fotcont .contitemsfooter a {
+    font-size: 15px;
+  }
+  footer .fotcont .contitemsfooter .ragadiv {
+    justify-content: center;
+    gap: 15px;
+  }
+  footer .fotcont .contitemsfooter .ragadiv span {
+    width: 45px;
+    height: 45px;
+  }
+  footer .fotcont .contitemsfooter .ragadiv span i {
+    font-size: 18px;
+  }
+  .minicopyright {
+    height: auto;
+    padding: 15px 0;
+  }
+  .minicopyright .copydiv {
+    width: 100%;
+  }
+  .minicopyright .copydiv #last {
+    font-size: 13px;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 40px 15px 25px;
+  }
+  footer .fotcont {
+    gap: 35px;
+  }
+  footer .fotcont .contitemsfooter {
+    gap: 20px;
+  }
+  footer .fotcont .contitemsfooter h1 {
+    font-size: 20px;
+  }
+  footer .fotcont .contitemsfooter a {
+    font-size: 14px;
+  }
+  footer .fotcont .contitemsfooter .ragadiv {
+    gap: 12px;
+  }
+  footer .fotcont .contitemsfooter .ragadiv span {
+    width: 42px;
+    height: 42px;
+  }
+  footer .fotcont .contitemsfooter .ragadiv span i {
+    font-size: 16px;
+  }
+  .minicopyright .copydiv #last {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+@media screen and (max-width: 360px) {
+  footer .fotcont .contitemsfooter h1 {
+    font-size: 18px;
+  }
+  footer .fotcont .contitemsfooter a {
+    font-size: 13px;
+  }
+  footer .fotcont .contitemsfooter .ragadiv span {
+    width: 40px;
+    height: 40px;
+  }
+  footer .fotcont .contitemsfooter .ragadiv span i {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=footer.component.css.map */
