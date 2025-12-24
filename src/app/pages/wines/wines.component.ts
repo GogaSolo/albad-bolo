@@ -341,6 +341,21 @@ export class WinesComponent implements OnInit {
         tastingNotes: 'Sweet wine with honey and ripe yellow fruits aromas',
         servingTemp: '10-12°C',
         price: 130
+      },
+      {
+        id: 21,
+        name: 'Sancerre white',
+        type: WineType.DESSERT,
+        image: '/assets/wines/სადესერტო/ქისი სადესერტო.png',
+        description: 'Dessert Amber Wine',
+        region: 'Kakheti, Village Babaneuri, Akhmeta Appelation',
+        year: 2021,
+        alcohol: 17,
+        volume: '375ml',
+        grapes: ['Kisi'],
+        tastingNotes: 'Sweet wine with honey and ripe yellow fruits aromas',
+        servingTemp: '10-12°C',
+        price: 130
       }
     ];
   }
